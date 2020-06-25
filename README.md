@@ -7,6 +7,7 @@ Made with **Deno** and **Typescript**
 ### Use:
 
 Create the `files/sounds/` folder and add your own sounds
+
 ![sounds](docs/sounds.png)
 
 After, install [Deno Runtime](https://deno.land/) and run by
