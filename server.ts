@@ -1,8 +1,8 @@
 import deps from "./deps.ts";
 import router from "./routes.ts";
 
-const HOST = deps.config().HOST ?? "0.0.0.0";
-const PORT = deps.config().PORT ?? "8000";
+const HOST = Deno.env.get("HOST") ?? "0.0.0.0";
+const PORT = Deno.env.get("PORT") ?? "8000";
 
 const server = new deps.Application();
 
