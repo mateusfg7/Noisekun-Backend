@@ -1,8 +1,8 @@
-import { Router } from "https://deno.land/x/oak/mod.ts";
+import deps from "./deps.ts";
 
 import sounds from "./files.ts";
 
-const router = new Router();
+const router = new deps.Router();
 
 router.get("/rain", (context) => {
   context.response.status = 200;

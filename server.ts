@@ -1,12 +1,10 @@
-import { Application } from "https://deno.land/x/oak/mod.ts";
-import { config } from "https://deno.land/x/dotenv/mod.ts";
-
+import deps from "./deps.ts";
 import router from "./routes.ts";
 
-const HOST = config().HOST ?? "127.0.0.1";
-const PORT = config().PORT ?? "8000";
+const HOST = deps.config().HOST ?? "127.0.0.1";
+const PORT = deps.config().PORT ?? "8000";
 
-const server = new Application();
+const server = new deps.Application();
 
 server.use(router.routes());
 server.use(router.allowedMethods());
