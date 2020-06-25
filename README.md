@@ -2,7 +2,7 @@
 
 _File server of [Noisekun](https://github.com/mateusfg7/Noisekun)_
 
-Made with **Deno**
+Made with **Deno** and **Typescript**
 
 ### Use:
 
