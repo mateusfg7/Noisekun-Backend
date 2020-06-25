@@ -1,26 +1,32 @@
-import { ServerRequest } from "https://deno.land/std/http/server.ts";
+import { Router } from "https://deno.land/x/oak/mod.ts";
 
-import { IFiles } from "./types.ts";
+import sounds from "./files.ts";
 
-export default async function routes(req: ServerRequest, sounds: IFiles) {
-  if (req.url === "/rain" || req.url === "/rain/") {
-    return req.respond({ body: sounds.rain, status: 200 });
-  }
-  if (req.url === "/water" || req.url === "/water/") {
-    return req.respond({ body: sounds.water, status: 200 });
-  }
-  if (req.url === "/storm" || req.url === "/storm/") {
-    return req.respond({ body: sounds.storm, status: 200 });
-  }
-  if (req.url === "/small_waves" || req.url === "/small_waves/") {
-    return req.respond({ body: sounds.small_waves, status: 200 });
-  }
-  if (req.url === "/ocean_waves" || req.url === "/ocean_waves/") {
-    return req.respond({ body: sounds.ocean_waves, status: 200 });
-  }
-  if (req.url === "/forest_ambience" || req.url === "/forest_ambience/") {
-    return req.respond({ body: sounds.forest_ambience, status: 200 });
-  }
+const router = new Router();
 
-  return req.respond({ status: 404 });
-}
+router.get("/rain", (context) => {
+  context.response.status = 200;
+  context.response.body = sounds.rain;
+});
+router.get("/water", (context) => {
+  context.response.status = 200;
+  context.response.body = sounds.water;
+});
+router.get("/storm", (context) => {
+  context.response.status = 200;
+  context.response.body = sounds.storm;
+});
+router.get("/small_waves", (context) => {
+  context.response.status = 200;
+  context.response.body = sounds.small_waves;
+});
+router.get("/ocean_waves", (context) => {
+  context.response.status = 200;
+  context.response.body = sounds.ocean_waves;
+});
+router.get("/forest_ambience", (context) => {
+  context.response.status = 200;
+  context.response.body = sounds.forest_ambience;
+});
+
+export default router;
