@@ -9,6 +9,9 @@ const sounds: IFiles = {
   forest_ambience: await Deno.readFile(
     "files/sounds/forest_ambience.mp3",
   ),
+  coffee: await Deno.readFile(
+    "files/sounds/coffee.mp3",
+  ),
 };
 
 export default sounds;

@@ -28,5 +28,9 @@ router.get("/forest_ambience", (context) => {
   context.response.status = 200;
   context.response.body = sounds.forest_ambience;
 });
+router.get("/coffee", (context) => {
+  context.response.status = 200;
+  context.response.body = sounds.coffee;
+});
 
 export default router;
