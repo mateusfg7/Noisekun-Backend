@@ -32,5 +32,9 @@ router.get("/coffee", (context) => {
   context.response.status = 200;
   context.response.body = sounds.coffee;
 });
+router.get("/wind", (context) => {
+  context.response.status = 200;
+  context.response.body = sounds.wind;
+});
 
 export default router;
