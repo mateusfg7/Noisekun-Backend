@@ -1,5 +1,7 @@
 import { expect } from "https://deno.land/x/expect/expect.ts";
 
+console.info("\nTHE SERVER NEEDS TO BE RUNNING ON PORT 8000\n");
+
 const routes = {
   "/": await fetch("http://0.0.0.0:8000/"),
   "/rain": await fetch("http://0.0.0.0:8000/rain"),
