@@ -1,9 +1,21 @@
 import { expect } from "https://deno.land/x/expect/expect.ts";
 
-console.info("\nTHE SERVER NEEDS TO BE RUNNING ON PORT 8000\n");
+// console.info("\nTHE SERVER NEEDS TO BE RUNNING ON PORT 8000\n");
+
+// await fetch("http://0.0.0.0:8000/").catch(() => {
+// });
+
+try {
+  await fetch("http://0.0.0.0:8000/");
+} catch (err) {
+  console.log("\nTHE SERVER NEEDS TO BE RUNNING ON PORT 8000\n");
+  console.log(err);
+}
+
+Deno.exit();
+// throw new Error("THE SERVER NEEDS TO BE RUNNING ON PORT 8000");
 
 const routes = {
-  "/": await fetch("http://0.0.0.0:8000/"),
   "/rain": await fetch("http://0.0.0.0:8000/rain"),
   "/water": await fetch("http://0.0.0.0:8000/water"),
   "/storm": await fetch("http://0.0.0.0:8000/storm"),
@@ -23,9 +35,6 @@ const routes = {
   "/underwater": await fetch("http://0.0.0.0:8000/underwater"),
 };
 
-Deno.test("Route /", () => {
-  expect(routes["/"].status).toBe(404);
-});
 Deno.test("Route /rain", () => {
   expect(routes["/rain"].status).toBe(200);
 });
