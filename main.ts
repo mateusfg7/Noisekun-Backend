@@ -1,6 +1,6 @@
-import server from "./server.ts";
+import server from "./modules/server.ts";
 
-import { HOST, PORT } from "./configs.ts";
+import { HOST, PORT } from "./config/configs.ts";
 
 console.log(`> Server is running on ${HOST}:${PORT}`);
 

@@ -5,9 +5,9 @@ WORKDIR /app
 USER deno
 
 COPY . .
-RUN deno cache deps.ts
+RUN deno cache modules/deps.ts
 
 ADD . .
-RUN deno cache server.ts
+RUN deno cache modules/server.ts
 
 CMD ["run", "--allow-net", "--allow-read", "--allow-env", "main.ts"]
