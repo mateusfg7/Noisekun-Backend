@@ -1,19 +1,12 @@
 import { expect } from "https://deno.land/x/expect/expect.ts";
 
-// console.info("\nTHE SERVER NEEDS TO BE RUNNING ON PORT 8000\n");
-
-// await fetch("http://0.0.0.0:8000/").catch(() => {
-// });
-
 try {
   await fetch("http://0.0.0.0:8000/");
 } catch (err) {
   console.log("\nTHE SERVER NEEDS TO BE RUNNING ON PORT 8000\n");
   console.log(err);
+  Deno.exit();
 }
-
-Deno.exit();
-// throw new Error("THE SERVER NEEDS TO BE RUNNING ON PORT 8000");
 
 const routes = {
   "/rain": await fetch("http://0.0.0.0:8000/rain"),
