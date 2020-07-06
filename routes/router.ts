@@ -48,5 +48,9 @@ router.get("/night", (context) => {
   context.response.status = 200;
   context.response.body = sounds.night;
 });
+router.get("/train", (context) => {
+  context.response.status = 200;
+  context.response.body = sounds.train;
+});
 
 export default router;

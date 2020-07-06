@@ -24,6 +24,9 @@ const sounds: IFiles = {
   night: await Deno.readFile(
     "files/sounds/night.mp3",
   ),
+  train: await Deno.readFile(
+    "files/sounds/train.mp3",
+  ),
 };
 
 export default sounds;
