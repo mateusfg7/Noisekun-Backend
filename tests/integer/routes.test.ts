@@ -17,7 +17,6 @@ const routes = {
   "/forest_ambience": await fetch("http://0.0.0.0:8000/forest_ambience"),
   "/coffee": await fetch("http://0.0.0.0:8000/coffee"),
   "/wind": await fetch("http://0.0.0.0:8000/wind"),
-  "/brow_noise": await fetch("http://0.0.0.0:8000/brow_noise"),
   "/leafs": await fetch("http://0.0.0.0:8000/leafs"),
   "/drops": await fetch("http://0.0.0.0:8000/drops"),
   "/fire": await fetch("http://0.0.0.0:8000/fire"),
@@ -64,12 +63,6 @@ Deno.test("Route /coffee", () => {
 Deno.test("Route /wind", () => {
   expect(routes["/wind"].status).toBe(200);
   expect(routes["/wind"].headers.get("content-length")).toBeGreaterThan(0);
-});
-Deno.test("Route /brow_noise", () => {
-  expect(routes["/brow_noise"].status).toBe(200);
-  expect(routes["/brow_noise"].headers.get("content-length")).toBeGreaterThan(
-    0,
-  );
 });
 Deno.test("Route /leafs", () => {
   expect(routes["/leafs"].status).toBe(200);

@@ -7,7 +7,6 @@ export interface IFiles {
   forest_ambience?: Uint8Array;
   coffee?: Uint8Array;
   wind?: Uint8Array;
-  brow_noise?: Uint8Array;
   leafs?: Uint8Array;
   drops?: Uint8Array;
   fire?: Uint8Array;
