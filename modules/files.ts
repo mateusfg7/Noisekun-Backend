@@ -21,6 +21,9 @@ const sounds: IFiles = {
   fire: await Deno.readFile(
     "files/sounds/fire.mp3",
   ),
+  night: await Deno.readFile(
+    "files/sounds/night.mp3",
+  ),
 };
 
 export default sounds;
