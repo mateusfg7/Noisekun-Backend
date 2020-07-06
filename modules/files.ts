@@ -15,6 +15,9 @@ const sounds: IFiles = {
   wind: await Deno.readFile(
     "files/sounds/wind.mp3",
   ),
+  leafs: await Deno.readFile(
+    "files/sounds/leafs.mp3",
+  ),
 };
 
 export default sounds;

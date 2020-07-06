@@ -36,5 +36,9 @@ router.get("/wind", (context) => {
   context.response.status = 200;
   context.response.body = sounds.wind;
 });
+router.get("/leafs", (context) => {
+  context.response.status = 200;
+  context.response.body = sounds.leafs;
+});
 
 export default router;
