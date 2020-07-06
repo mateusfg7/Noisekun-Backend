@@ -56,5 +56,9 @@ router.get("/fan", (context) => {
   context.response.status = 200;
   context.response.body = sounds.fan;
 });
+router.get("/air_plane", (context) => {
+  context.response.status = 200;
+  context.response.body = sounds.air_plane;
+});
 
 export default router;

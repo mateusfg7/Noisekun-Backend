@@ -30,6 +30,9 @@ const sounds: IFiles = {
   fan: await Deno.readFile(
     "files/sounds/fan.mp3",
   ),
+  air_plane: await Deno.readFile(
+    "files/sounds/air_plane.mp3",
+  ),
 };
 
 export default sounds;
