@@ -40,5 +40,9 @@ router.get("/leafs", (context) => {
   context.response.status = 200;
   context.response.body = sounds.leafs;
 });
+router.get("/fire", (context) => {
+  context.response.status = 200;
+  context.response.body = sounds.fire;
+});
 
 export default router;
