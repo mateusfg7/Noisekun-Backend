@@ -33,6 +33,9 @@ const sounds: IFiles = {
   air_plane: await Deno.readFile(
     "files/sounds/air_plane.mp3",
   ),
+  underwater: await Deno.readFile(
+    "files/sounds/underwater.mp3",
+  ),
 };
 
 export default sounds;

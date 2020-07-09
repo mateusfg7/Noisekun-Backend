@@ -60,5 +60,9 @@ router.get("/air_plane", (context) => {
   context.response.status = 200;
   context.response.body = sounds.air_plane;
 });
+router.get("/underwater", (context) => {
+  context.response.status = 200;
+  context.response.body = sounds.underwater;
+});
 
 export default router;
