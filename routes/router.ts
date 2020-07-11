@@ -6,63 +6,63 @@ const router = new deps.Router();
 
 router.get("/rain", (context) => {
   context.response.status = 200;
-  context.response.body = sounds.rain;
+  context.response.body = sounds["rain"];
 });
 router.get("/water", (context) => {
   context.response.status = 200;
-  context.response.body = sounds.water;
+  context.response.body = sounds["water"];
 });
 router.get("/storm", (context) => {
   context.response.status = 200;
-  context.response.body = sounds.storm;
+  context.response.body = sounds["storm"];
 });
-router.get("/small_waves", (context) => {
+router.get("/small-waves", (context) => {
   context.response.status = 200;
-  context.response.body = sounds.small_waves;
+  context.response.body = sounds["small-waves"];
 });
-router.get("/ocean_waves", (context) => {
+router.get("/ocean-waves", (context) => {
   context.response.status = 200;
-  context.response.body = sounds.ocean_waves;
+  context.response.body = sounds["ocean-waves"];
 });
-router.get("/forest_ambience", (context) => {
+router.get("/forest-ambience", (context) => {
   context.response.status = 200;
-  context.response.body = sounds.forest_ambience;
+  context.response.body = sounds["forest-ambience"];
 });
 router.get("/coffee", (context) => {
   context.response.status = 200;
-  context.response.body = sounds.coffee;
+  context.response.body = sounds["coffee"];
 });
 router.get("/wind", (context) => {
   context.response.status = 200;
-  context.response.body = sounds.wind;
+  context.response.body = sounds["wind"];
 });
 router.get("/leafs", (context) => {
   context.response.status = 200;
-  context.response.body = sounds.leafs;
+  context.response.body = sounds["leafs"];
 });
 router.get("/fire", (context) => {
   context.response.status = 200;
-  context.response.body = sounds.fire;
+  context.response.body = sounds["fire"];
 });
 router.get("/night", (context) => {
   context.response.status = 200;
-  context.response.body = sounds.night;
+  context.response.body = sounds["night"];
 });
 router.get("/train", (context) => {
   context.response.status = 200;
-  context.response.body = sounds.train;
+  context.response.body = sounds["train"];
 });
 router.get("/fan", (context) => {
   context.response.status = 200;
-  context.response.body = sounds.fan;
+  context.response.body = sounds["fan"];
 });
-router.get("/air_plane", (context) => {
+router.get("/air-plane", (context) => {
   context.response.status = 200;
-  context.response.body = sounds.air_plane;
+  context.response.body = sounds["air-plane"];
 });
 router.get("/underwater", (context) => {
   context.response.status = 200;
-  context.response.body = sounds.underwater;
+  context.response.body = sounds["underwater"];
 });
 
 export default router;
