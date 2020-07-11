@@ -1,39 +1,39 @@
 import { IFiles } from "../types.ts";
 
 const sounds: IFiles = {
-  rain: await Deno.readFile("files/sounds/rain.mp3"),
-  water: await Deno.readFile("files/sounds/water.mp3"),
-  storm: await Deno.readFile("files/sounds/storm.mp3"),
-  small_waves: await Deno.readFile("files/sounds/small-waves.mp3"),
-  ocean_waves: await Deno.readFile("files/sounds/ocean-waves.mp3"),
-  forest_ambience: await Deno.readFile(
+  "rain": await Deno.readFile("files/sounds/rain.mp3"),
+  "water": await Deno.readFile("files/sounds/water.mp3"),
+  "storm": await Deno.readFile("files/sounds/storm.mp3"),
+  "small-waves": await Deno.readFile("files/sounds/small-waves.mp3"),
+  "ocean-waves": await Deno.readFile("files/sounds/ocean-waves.mp3"),
+  "forest-ambience": await Deno.readFile(
     "files/sounds/forest-ambience.mp3",
   ),
-  coffee: await Deno.readFile(
+  "coffee": await Deno.readFile(
     "files/sounds/coffee.mp3",
   ),
-  wind: await Deno.readFile(
+  "wind": await Deno.readFile(
     "files/sounds/wind.mp3",
   ),
-  leafs: await Deno.readFile(
+  "leafs": await Deno.readFile(
     "files/sounds/leafs.mp3",
   ),
-  fire: await Deno.readFile(
+  "fire": await Deno.readFile(
     "files/sounds/fire.mp3",
   ),
-  night: await Deno.readFile(
+  "night": await Deno.readFile(
     "files/sounds/night.mp3",
   ),
-  train: await Deno.readFile(
+  "train": await Deno.readFile(
     "files/sounds/train.mp3",
   ),
-  fan: await Deno.readFile(
+  "fan": await Deno.readFile(
     "files/sounds/fan.mp3",
   ),
-  air_plane: await Deno.readFile(
+  "air-plane": await Deno.readFile(
     "files/sounds/air-plane.mp3",
   ),
-  underwater: await Deno.readFile(
+  "underwater": await Deno.readFile(
     "files/sounds/underwater.mp3",
   ),
 };
