@@ -12,10 +12,10 @@ const routes = {
   "/webm/rain": await fetch("http://0.0.0.0:8000/webm/rain"),
   "/webm/water": await fetch("http://0.0.0.0:8000/webm/water"),
   "/webm/storm": await fetch("http://0.0.0.0:8000/webm/storm"),
-  "/webm/small_waves": await fetch("http://0.0.0.0:8000/webm/small_waves"),
-  "/webm/ocean_waves": await fetch("http://0.0.0.0:8000/webm/ocean_waves"),
-  "/webm/forest_ambience": await fetch(
-    "http://0.0.0.0:8000/webm/forest_ambience",
+  "/webm/small-waves": await fetch("http://0.0.0.0:8000/webm/small-waves"),
+  "/webm/ocean-waves": await fetch("http://0.0.0.0:8000/webm/ocean-waves"),
+  "/webm/forest-ambience": await fetch(
+    "http://0.0.0.0:8000/webm/forest-ambience",
   ),
   "/webm/coffee": await fetch("http://0.0.0.0:8000/webm/coffee"),
   "/webm/wind": await fetch("http://0.0.0.0:8000/webm/wind"),
@@ -25,7 +25,7 @@ const routes = {
   "/webm/night": await fetch("http://0.0.0.0:8000/webm/night"),
   "/webm/train": await fetch("http://0.0.0.0:8000/webm/train"),
   "/webm/fan": await fetch("http://0.0.0.0:8000/webm/fan"),
-  "/webm/air_plane": await fetch("http://0.0.0.0:8000/webm/air_plane"),
+  "/webm/air-plane": await fetch("http://0.0.0.0:8000/webm/air-plane"),
   "/webm/underwater": await fetch("http://0.0.0.0:8000/webm/underwater"),
 };
 
@@ -45,23 +45,23 @@ Deno.test("Route /webm/storm", () => {
     0,
   );
 });
-Deno.test("Route /webm/small_waves", () => {
-  expect(routes["/webm/small_waves"].status).toBe(200);
-  expect(routes["/webm/small_waves"].headers.get("content-length"))
+Deno.test("Route /webm/small-waves", () => {
+  expect(routes["/webm/small-waves"].status).toBe(200);
+  expect(routes["/webm/small-waves"].headers.get("content-length"))
     .toBeGreaterThan(
       0,
     );
 });
-Deno.test("Route /webm/ocean_waves", () => {
-  expect(routes["/webm/ocean_waves"].status).toBe(200);
-  expect(routes["/webm/ocean_waves"].headers.get("content-length"))
+Deno.test("Route /webm/ocean-waves", () => {
+  expect(routes["/webm/ocean-waves"].status).toBe(200);
+  expect(routes["/webm/ocean-waves"].headers.get("content-length"))
     .toBeGreaterThan(
       0,
     );
 });
-Deno.test("Route /webm/forest_ambience", () => {
-  expect(routes["/webm/forest_ambience"].status).toBe(200);
-  expect(routes["/webm/forest_ambience"].headers.get("content-length"))
+Deno.test("Route /webm/forest-ambience", () => {
+  expect(routes["/webm/forest-ambience"].status).toBe(200);
+  expect(routes["/webm/forest-ambience"].headers.get("content-length"))
     .toBeGreaterThan(0);
 });
 Deno.test("Route /webm/coffee", () => {
@@ -106,9 +106,9 @@ Deno.test("Route /webm/fan", () => {
   expect(routes["/webm/fan"].status).toBe(200);
   expect(routes["/webm/fan"].headers.get("content-length")).toBeGreaterThan(0);
 });
-Deno.test("Route /webm/air_plane", () => {
-  expect(routes["/webm/air_plane"].status).toBe(200);
-  expect(routes["/webm/air_plane"].headers.get("content-length"))
+Deno.test("Route /webm/air-plane", () => {
+  expect(routes["/webm/air-plane"].status).toBe(200);
+  expect(routes["/webm/air-plane"].headers.get("content-length"))
     .toBeGreaterThan(0);
 });
 Deno.test("Route /webm/underwater", () => {

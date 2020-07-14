@@ -12,10 +12,10 @@ const routes = {
   "/mp3/rain": await fetch("http://0.0.0.0:8000/mp3/rain"),
   "/mp3/water": await fetch("http://0.0.0.0:8000/mp3/water"),
   "/mp3/storm": await fetch("http://0.0.0.0:8000/mp3/storm"),
-  "/mp3/small_waves": await fetch("http://0.0.0.0:8000/mp3/small_waves"),
-  "/mp3/ocean_waves": await fetch("http://0.0.0.0:8000/mp3/ocean_waves"),
-  "/mp3/forest_ambience": await fetch(
-    "http://0.0.0.0:8000/mp3/forest_ambience",
+  "/mp3/small-waves": await fetch("http://0.0.0.0:8000/mp3/small-waves"),
+  "/mp3/ocean-waves": await fetch("http://0.0.0.0:8000/mp3/ocean-waves"),
+  "/mp3/forest-ambience": await fetch(
+    "http://0.0.0.0:8000/mp3/forest-ambience",
   ),
   "/mp3/coffee": await fetch("http://0.0.0.0:8000/mp3/coffee"),
   "/mp3/wind": await fetch("http://0.0.0.0:8000/mp3/wind"),
@@ -25,7 +25,7 @@ const routes = {
   "/mp3/night": await fetch("http://0.0.0.0:8000/mp3/night"),
   "/mp3/train": await fetch("http://0.0.0.0:8000/mp3/train"),
   "/mp3/fan": await fetch("http://0.0.0.0:8000/mp3/fan"),
-  "/mp3/air_plane": await fetch("http://0.0.0.0:8000/mp3/air_plane"),
+  "/mp3/air-plane": await fetch("http://0.0.0.0:8000/mp3/air-plane"),
   "/mp3/underwater": await fetch("http://0.0.0.0:8000/mp3/underwater"),
 };
 
@@ -41,23 +41,23 @@ Deno.test("Route /mp3/storm", () => {
   expect(routes["/mp3/storm"].status).toBe(200);
   expect(routes["/mp3/storm"].headers.get("content-length")).toBeGreaterThan(0);
 });
-Deno.test("Route /mp3/small_waves", () => {
-  expect(routes["/mp3/small_waves"].status).toBe(200);
-  expect(routes["/mp3/small_waves"].headers.get("content-length"))
+Deno.test("Route /mp3/small-waves", () => {
+  expect(routes["/mp3/small-waves"].status).toBe(200);
+  expect(routes["/mp3/small-waves"].headers.get("content-length"))
     .toBeGreaterThan(
       0,
     );
 });
-Deno.test("Route /mp3/ocean_waves", () => {
-  expect(routes["/mp3/ocean_waves"].status).toBe(200);
-  expect(routes["/mp3/ocean_waves"].headers.get("content-length"))
+Deno.test("Route /mp3/ocean-waves", () => {
+  expect(routes["/mp3/ocean-waves"].status).toBe(200);
+  expect(routes["/mp3/ocean-waves"].headers.get("content-length"))
     .toBeGreaterThan(
       0,
     );
 });
-Deno.test("Route /mp3/forest_ambience", () => {
-  expect(routes["/mp3/forest_ambience"].status).toBe(200);
-  expect(routes["/mp3/forest_ambience"].headers.get("content-length"))
+Deno.test("Route /mp3/forest-ambience", () => {
+  expect(routes["/mp3/forest-ambience"].status).toBe(200);
+  expect(routes["/mp3/forest-ambience"].headers.get("content-length"))
     .toBeGreaterThan(0);
 });
 Deno.test("Route /mp3/coffee", () => {
@@ -94,9 +94,9 @@ Deno.test("Route /mp3/fan", () => {
   expect(routes["/mp3/fan"].status).toBe(200);
   expect(routes["/mp3/fan"].headers.get("content-length")).toBeGreaterThan(0);
 });
-Deno.test("Route /mp3/air_plane", () => {
-  expect(routes["/mp3/air_plane"].status).toBe(200);
-  expect(routes["/mp3/air_plane"].headers.get("content-length"))
+Deno.test("Route /mp3/air-plane", () => {
+  expect(routes["/mp3/air-plane"].status).toBe(200);
+  expect(routes["/mp3/air-plane"].headers.get("content-length"))
     .toBeGreaterThan(0);
 });
 Deno.test("Route /mp3/underwater", () => {
