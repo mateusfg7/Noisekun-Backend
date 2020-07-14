@@ -1,6 +1,6 @@
 import deps from "./deps.ts";
-import routes_mp3 from "../routes/audios/routes_mp3.ts";
-import routes_webm from "../routes/audios/routes_webm.ts";
+import routes_mp3 from "../routes/audios_mp3.ts";
+import routes_webm from "../routes/audios_webm.ts";
 
 const server = new deps.Application();
 

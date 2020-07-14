@@ -1,6 +1,6 @@
-import deps from "../../modules/deps.ts";
+import deps from "../modules/deps.ts";
 
-import sounds from "../../modules/files.ts";
+import sounds from "../modules/files.ts";
 
 const routes_webm = new deps.Router();
 
